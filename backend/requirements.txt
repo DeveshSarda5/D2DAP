@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+networkx
+pydantic
+pytest
+black
+isort
+ruff
+mypy
+python-dotenv

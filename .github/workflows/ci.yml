@@ -10,14 +10,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+          
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
+          # Explicitly install our Phase 1 requirements just in case
+          pip install pytest networkx
+          # Install anything else listed in the requirements file
           pip install -r backend/requirements.txt
+          
       - name: Run tests
+        env:
+          PYTHONPATH: .
         run: |
-          cd backend
-          pytest
+          # Run pytest directly from the root directory so 'backend.app...' resolves correctly
+          python -m pytest backend/tests/

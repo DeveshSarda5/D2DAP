@@ -28,7 +28,7 @@ class SimulationNetwork:
     def get_neighbors(self, drone_id: str) -> List[str]:
         if drone_id in self.graph:
             return list(self.graph.neighbors(drone_id))
-            return []
+        return []  # Shifted to the left by four spaces
 
     def get_drone(self, drone_id: str) -> Drone:
         return self.registry.get(drone_id)

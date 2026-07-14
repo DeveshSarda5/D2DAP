@@ -1,10 +1,9 @@
-# backend/tests/test_phase2.py
 import pytest
 import time
-from app.authentication.auth_manager import AuthenticationManager
-from app.authentication.models import AuthRequestPayload, AuthResponsePayload
-from app.authentication.crypto import CryptoSimulator
-from app.authentication.nonce import NonceManager
+from backend.app.authentication.auth_manager import AuthenticationManager
+from backend.app.authentication.models import AuthRequestPayload, AuthResponsePayload
+from backend.app.authentication.crypto import CryptoSimulator
+from backend.app.authentication.nonce import NonceManager
 
 @pytest.fixture
 def auth_setup():

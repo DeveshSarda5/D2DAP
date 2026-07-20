@@ -176,7 +176,7 @@ Future work will focus on implementing the simulation engine, expanding the secu
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the LICENSE file for details. Implemented Phase 1
 
 ## Contributors
 

@@ -1,0 +1,9 @@
+{
+  "experiment": "ablation",
+  "seed": 42,
+  "caption": "Ablation study of the adaptive framework: per-attack detected",
+  "sources": [
+    "processed/ablation/per_attack_detected.csv"
+  ],
+  "git_commit": "64b9b7f7768467f0a0fa8476104ec4dde74b9e32"
+}

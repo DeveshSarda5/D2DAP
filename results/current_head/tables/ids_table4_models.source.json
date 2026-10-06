@@ -1,0 +1,9 @@
+{
+  "experiment": "ids",
+  "seed": 42,
+  "caption": "Table 4: ML IDS comparison on held-out simulated runs (D2D-SIM)",
+  "sources": [
+    "processed/ids/metrics_all.csv"
+  ],
+  "git_commit": "64b9b7f7768467f0a0fa8476104ec4dde74b9e32"
+}

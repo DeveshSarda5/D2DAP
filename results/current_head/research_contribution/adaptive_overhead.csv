@@ -1,0 +1,6 @@
+measurement,system_variant,drones,auth_latency_ms_mean,ids_ms_per_window_mean,trust_policy_ms_per_window_mean,monitor_ms_per_window_mean,runtime_wall_s,receptions,memory_rss_mb,limitation
+scalability,adaptive,5,32.00847666666667,26.741058620689657,1.061886206896552,86.02029655172416,4.2709390000018175,1936,306.73046875,Trust/policy cost is combined; no isolated policy-only timer is recorded.
+scalability,adaptive,10,30.19274,21.623775862068968,1.4980137931034483,80.77805862068965,6.221227599999111,5774,308.375,Trust/policy cost is combined; no isolated policy-only timer is recorded.
+scalability,adaptive,25,34.19486666666667,26.31826551724138,2.237248275862069,93.24615172413795,18.80110489999788,20573,319.24609375,Trust/policy cost is combined; no isolated policy-only timer is recorded.
+scalability,adaptive,50,33.12840333333333,19.182199999999998,3.278227586206896,79.73582758620691,42.33013239999855,46640,340.578125,Trust/policy cost is combined; no isolated policy-only timer is recorded.
+scalability,adaptive,100,31.059183333333333,28.088341379310343,7.695806896551725,121.21969999999997,166.7475373999987,100519,376.53515625,Trust/policy cost is combined; no isolated policy-only timer is recorded.

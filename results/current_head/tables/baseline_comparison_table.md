@@ -1,0 +1,8 @@
+**Table 6: adaptive framework vs baselines (A-D)**
+
+| system                          |   detection_rate |   fpr_flag_rate |   disruption_rate |   framed_rate |    fnr |   detection_ms_median |   response_ms_median |   mitigation_rate |   collateral_rate |   monitor_ms_per_window |   security_bytes_per_s |
+|:--------------------------------|-----------------:|----------------:|------------------:|--------------:|-------:|----------------------:|---------------------:|------------------:|------------------:|------------------------:|-----------------------:|
+| A: Authentication only (D2DAP)  |           0.6667 |          0      |            0      |             0 | 0.3333 |                   nan |                  nan |            0.6818 |            0      |                  0      |                 629.24 |
+| B: D2DAP + ML IDS (alert/block) |           1      |          0.0007 |            0.0007 |             1 | 0      |                  1000 |                 1100 |            0.956  |            0.0001 |                 54.9312 |                1801.16 |
+| C: D2DAP + IDS + Trust (binary) |           1      |          0      |            0      |             0 | 0      |                  2500 |                 2600 |            0.7778 |            0      |                 39.8653 |                1831.25 |
+| D: Full adaptive framework      |           1      |          0.0129 |            0      |             0 | 0      |                  4000 |                 2200 |            0.9549 |            0      |                 99.1661 |                1813.64 |

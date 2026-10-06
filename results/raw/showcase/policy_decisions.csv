@@ -1,0 +1,101 @@
+drone_id,t_ms,previous_state,new_state,trust_before,trust_after,actions,rule,explanation
+D5,6000,normal,monitor,0.9425,0.7968,increase_monitoring,trust band,"Drone D5
+Trust before = 0.94
+Attack probability = 0.50 (benign)
+Authentication failures = 0
+Verified (identity-bound) traffic = 100%
+Evidence: IDS P(attack)=0.50 (benign), attribution=1.00; transmission-rate anomaly
+Trust after = 0.80
+Decision = MONITOR (from NORMAL)
+Rule = trust band
+Actions = increase_monitoring"
+D5,15000,monitor,normal,0.848,0.869,lift_restrictions,trust band,"Drone D5
+Trust before = 0.85
+Attack probability = 0.00 (benign)
+Authentication failures = 0
+Verified (identity-bound) traffic = 100%
+Evidence: IDS P(attack)=0.00 (benign), attribution=1.00; 1 successful MAKA; repeat-offender x1.15
+Trust after = 0.87
+Decision = NORMAL (from MONITOR)
+Rule = trust band
+Actions = lift_restrictions"
+D3,16000,normal,monitor,0.9554,0.6947,increase_monitoring,trust band,"Drone D3
+Trust before = 0.96
+Attack probability = 1.00 (flooding)
+Authentication failures = 0
+Verified (identity-bound) traffic = 100%
+Evidence: IDS P(attack)=1.00 (flooding), attribution=1.00; 1 successful MAKA; transmission-rate anomaly
+Trust after = 0.69
+Decision = MONITOR (from NORMAL)
+Rule = trust band
+Actions = increase_monitoring"
+D3,17000,monitor,restrict,0.6947,0.5271,rate_limit|block_privileged_commands,trust band,"Drone D3
+Trust before = 0.69
+Attack probability = 1.00 (flooding)
+Authentication failures = 0
+Verified (identity-bound) traffic = 100%
+Evidence: IDS P(attack)=1.00 (flooding), attribution=1.00; transmission-rate anomaly; repeat-offender x1.15
+Trust after = 0.53
+Decision = RESTRICT (from MONITOR)
+Rule = trust band
+Actions = rate_limit, block_privileged_commands"
+D3,19000,restrict,reauthenticate,0.4135,0.3332,rate_limit|block_privileged_commands|revoke_sessions|force_reauthentication,trust band,"Drone D3
+Trust before = 0.41
+Attack probability = 1.00 (flooding)
+Authentication failures = 0
+Verified (identity-bound) traffic = 100%
+Evidence: IDS P(attack)=1.00 (flooding), attribution=1.00; transmission-rate anomaly; repeat-offender x1.45
+Trust after = 0.33
+Decision = REAUTHENTICATE (from RESTRICT)
+Rule = trust band
+Actions = rate_limit, block_privileged_commands, revoke_sessions, force_reauthentication"
+D3,24000,reauthenticate,restrict,0.4462,0.463,rate_limit|block_privileged_commands,trust band,"Drone D3
+Trust before = 0.45
+Attack probability = 0.12 (benign)
+Authentication failures = 0
+Verified (identity-bound) traffic = 100%
+Evidence: IDS P(attack)=0.12 (benign), attribution=1.00; transmission-rate anomaly; repeat-offender x1.90
+Trust after = 0.46
+Decision = RESTRICT (from REAUTHENTICATE)
+Rule = trust band
+Actions = rate_limit, block_privileged_commands"
+D3,25000,restrict,reauthenticate,0.463,0.36,rate_limit|block_privileged_commands|revoke_sessions|force_reauthentication,trust band,"Drone D3
+Trust before = 0.46
+Attack probability = 1.00 (flooding)
+Authentication failures = 0
+Verified (identity-bound) traffic = 100%
+Evidence: IDS P(attack)=1.00 (flooding), attribution=1.00; transmission-rate anomaly; repeat-offender x1.90
+Trust after = 0.36
+Decision = REAUTHENTICATE (from RESTRICT)
+Rule = trust band
+Actions = rate_limit, block_privileged_commands, revoke_sessions, force_reauthentication"
+D3,38000,reauthenticate,restrict,0.4337,0.4736,rate_limit|block_privileged_commands,trust band,"Drone D3
+Trust before = 0.43
+Attack probability = 0.00 (benign)
+Authentication failures = 0
+Verified (identity-bound) traffic = 100%
+Evidence: IDS P(attack)=0.00 (benign), attribution=1.00; repeat-offender x3.00
+Trust after = 0.47
+Decision = RESTRICT (from REAUTHENTICATE)
+Rule = trust band
+Actions = rate_limit, block_privileged_commands"
+D3,43000,restrict,monitor,0.6375,0.6699,increase_monitoring,trust band,"Drone D3
+Trust before = 0.64
+Attack probability = 0.00 (benign)
+Authentication failures = 0
+Verified (identity-bound) traffic = 100%
+Evidence: IDS P(attack)=0.00 (benign), attribution=1.00; repeat-offender x3.00
+Trust after = 0.67
+Decision = MONITOR (from RESTRICT)
+Rule = trust band
+Actions = increase_monitoring"
+D3,51000,monitor,normal,0.8384,0.854,lift_restrictions,trust band,"Drone D3
+Trust before = 0.84
+Attack probability = 0.00 (benign)
+Authentication failures = 0
+Verified (identity-bound) traffic = 100%
+Evidence: IDS P(attack)=0.00 (benign), attribution=1.00; repeat-offender x2.20
+Trust after = 0.85
+Decision = NORMAL (from MONITOR)
+Rule = trust band
+Actions = lift_restrictions"

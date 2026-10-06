@@ -1,0 +1,52 @@
+{
+  "experiment": "puf_quality",
+  "seed": 42,
+  "config": {
+    "devices": 16,
+    "challenges": 40,
+    "repeats": 5,
+    "noise_levels": [
+      0.0,
+      0.25,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "votes": [
+      1,
+      5
+    ],
+    "xor_k": 4,
+    "stages": 128,
+    "response_bits": 128
+  },
+  "environment": {
+    "python": "3.10.11",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "machine": "AMD64",
+    "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+    "packages": {
+      "numpy": "2.2.6",
+      "pandas": "2.3.3",
+      "scikit-learn": "1.7.2",
+      "xgboost": "3.2.0",
+      "ecdsa": "0.19.2",
+      "cryptography": "50.0.2",
+      "pydantic": "2.13.5",
+      "matplotlib": "3.10.9"
+    },
+    "git_commit": "1004505e04db99c0b277aad53cb4a9553cc3ec33"
+  },
+  "started_unix": 1791124697.24583,
+  "duration_s": 22.928,
+  "metrics": {
+    "rows": 11
+  },
+  "files": [
+    "figures/puf_quality_reliability.png",
+    "raw/puf_quality/challenges.json",
+    "raw/puf_quality/puf_quality.csv",
+    "tables/puf_quality_table.csv"
+  ],
+  "result_type": "Our Experimental Result (software simulation on the machine above)"
+}

@@ -1,0 +1,10 @@
+{
+  "experiment": "authentication",
+  "seed": 42,
+  "caption": "Compute cost breakdown by primitive",
+  "sources": [
+    "processed/authentication/micro_ops_summary.csv",
+    "processed/authentication/maka_summary.csv"
+  ],
+  "git_commit": "64b9b7f7768467f0a0fa8476104ec4dde74b9e32"
+}

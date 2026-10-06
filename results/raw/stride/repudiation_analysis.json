@@ -1,0 +1,5 @@
+{
+  "m1_signature_judge_verifiable": true,
+  "receiver_can_forge_m1": false,
+  "data_packet_forgeable_by_receiver": true
+}

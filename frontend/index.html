@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Drone Trust Dashboard</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<header class="bar">
+  <div>
+    <h1>Adaptive Trust-Aware Drone Security</h1>
+    <p class="sub">D2DAP authentication · ML IDS · trust engine · adaptive policy, live from the running simulation</p>
+  </div>
+  <form id="controls" class="controls" onsubmit="return false">
+    <label>Drones <input id="cfg-drones" type="number" min="3" max="60" value="10"></label>
+    <label>Seed <input id="cfg-seed" type="number" value="42"></label>
+    <label>System
+      <select id="cfg-variant">
+        <option value="adaptive">D: Full adaptive</option>
+        <option value="d2dap_ids_trust">C: IDS + trust (binary)</option>
+        <option value="d2dap_ids">B: IDS alert/block</option>
+        <option value="no_ml">Full − ML</option>
+        <option value="d2dap">A: D2DAP only</option>
+      </select>
+    </label>
+    <label>Speed <input id="cfg-speed" type="number" min="0.5" max="50" step="0.5" value="2"></label>
+    <button id="btn-start" class="primary">Start</button>
+    <button id="btn-stop">Stop</button>
+  </form>
+</header>
+<p id="notice" class="notice" hidden></p>
+
+<section class="tiles" id="tiles" aria-label="System metrics"></section>
+
+<main class="grid">
+  <section class="card">
+    <h2>Network topology <span class="muted" id="topo-meta"></span></h2>
+    <svg id="topology" viewBox="0 0 500 420" role="img" aria-label="Drone network topology"></svg>
+    <div class="legend" id="state-legend"></div>
+  </section>
+
+  <section class="card">
+    <h2>Drones</h2>
+    <div class="table-wrap">
+      <table id="drones">
+        <thead><tr><th>Drone</th><th>Role</th><th>Auth</th><th>Trust</th><th>State</th><th>Battery</th><th>Sessions</th><th>CRPs</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <p class="hint">Click a drone to highlight it in the trust charts.</p>
+  </section>
+
+  <section class="card wide">
+    <h2>Trust score over time</h2>
+    <div class="chart" id="trust-chart"></div>
+    <div class="legend" id="trust-legend"></div>
+  </section>
+
+  <section class="card wide">
+    <h2>ML IDS attack probability per window</h2>
+    <div class="chart" id="prob-chart"></div>
+  </section>
+
+  <section class="card">
+    <h2>Launch a simulated attack</h2>
+    <form id="attack-form" class="attack" onsubmit="return false">
+      <label>Attack <select id="atk-kind"></select></label>
+      <label>Target <select id="atk-target"></select></label>
+      <label>Duration (s) <input id="atk-dur" type="number" value="30" min="5" max="300"></label>
+      <label>Rate (pkt/s) <input id="atk-rate" type="number" value="20" min="1" max="200"></label>
+      <button id="btn-attack" class="danger">Launch</button>
+    </form>
+    <div id="active-attacks" class="muted"></div>
+  </section>
+
+  <section class="card">
+    <h2>Recent security events</h2>
+    <ol id="events" class="events"></ol>
+  </section>
+</main>
+<div id="tooltip" class="tooltip" hidden></div>
+<footer class="foot">Software simulation. Values come from the running backend (no hard-coded data). No hardware or energy results.</footer>
+<script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+kind,d2dap,d2dap_ids,d2dap_ids_trust,adaptive
+abnormal,0.0,1.0,1.0,1.0
+dos,1.0,1.0,1.0,1.0
+flooding,0.0,1.0,1.0,1.0
+impersonation,1.0,1.0,1.0,1.0
+privilege_escalation,0.0,1.0,1.0,1.0
+replay,1.0,1.0,1.0,1.0
+spoofing,1.0,1.0,1.0,1.0
+tampering,1.0,1.0,1.0,1.0
+unauthorized_access,1.0,1.0,1.0,1.0

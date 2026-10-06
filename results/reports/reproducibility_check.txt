@@ -1,0 +1,11 @@
+1) traffic profile (quick) twice, seed 7
+  IDENTICAL  raw/traffic_profile/packets.csv  (1781 rows)
+2) adaptive-framework showcase (quick) twice, seed 7
+  IDENTICAL  raw/showcase/trust_updates.csv  (310 rows)
+  IDENTICAL  raw/showcase/policy_decisions.csv  (6 rows)
+  IDENTICAL  raw/showcase/ids_alerts.csv  (14 rows)
+  IDENTICAL  raw/showcase/packets.csv  (4726 rows)
+3) IDS dataset generation: sequential vs parallel, seed 3
+  IDENTICAL  dataset (360 windows)
+
+REPRODUCIBILITY: PASSED

@@ -1,0 +1,9 @@
+{
+  "experiment": "baseline_comparison",
+  "seed": 42,
+  "caption": "Table 6: adaptive framework vs baselines (A-D): per-attack detection_ms",
+  "sources": [
+    "processed/baseline_comparison/per_attack_detection_ms.csv"
+  ],
+  "git_commit": "64b9b7f7768467f0a0fa8476104ec4dde74b9e32"
+}

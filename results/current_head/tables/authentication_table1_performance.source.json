@@ -1,0 +1,10 @@
+{
+  "experiment": "authentication",
+  "seed": 42,
+  "caption": "Table 1: D2DAP authentication performance (our measurement, software, 200 trials, compute only)",
+  "sources": [
+    "raw/authentication/maka_trials_raw.csv",
+    "processed/authentication/maka_summary.csv"
+  ],
+  "git_commit": "64b9b7f7768467f0a0fa8476104ec4dde74b9e32"
+}

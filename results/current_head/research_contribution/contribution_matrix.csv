@@ -1,0 +1,5 @@
+component,existing_literature,our_implementation,our_contribution,experimental_evidence,limitation
+D2DAP,Existing protocol family,Implemented in software simulation,Implementation/integration,Current-head authentication and STRIDE runs,Software cryptography and software PUF
+ML IDS,Existing ML methods and IDS framing,Generated-data multiclass IDS,Implementation/evaluation,Current-head metrics and stress split,Simulator-generated data; no real-drone generalization
+Attribution-aware trust,Related reputation/trust concepts,Implemented decayed evidence fusion,Proposed integration,Trust validation and attribution ablation,Model assumptions and controlled evidence cases
+Adaptive policy,Adaptive response is established; exact integration varies,Graded policy with hysteresis and receiver enforcement,System-level integration contribution,"Baseline, ablation, STRIDE, scalability",Simulation-only response and timing

@@ -1,0 +1,11 @@
+claim,classification,basis,limitation
+secure authentication,SUPPORTED BY EXPERIMENT,D2DAP current-head success and rejection tests,Software simulation
+adaptive security,SIMULATION-ONLY,"Baseline, ablation, and STRIDE results",No deployment validation
+real-time detection,SUPPORTED BY EXPERIMENT,One-second monitor windows and measured processing,Host and simulator timing
+scalability,SUPPORTED BY EXPERIMENT,5/10/25/50/100 drone runs,Do not extrapolate beyond tested sizes
+energy efficiency,NOT SUPPORTED,No hardware energy measurement,Requires physical instrumentation
+physical PUF security,NOT SUPPORTED,PUF is software model,No physical unclonability evidence
+real drone deployment,NOT SUPPORTED,Software simulation only,No field deployment
+ML generalization,NOT SUPPORTED,Training/evaluation use simulator data,No external real-world validation
+STRIDE resistance,SUPPORTED BY EXPERIMENT,Current-head STRIDE matrix and runs,Attack-model and simulator boundaries
+trust-aware mitigation,SIMULATION-ONLY,Attribution validation and ablation,Controlled model assumptions

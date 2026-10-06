@@ -1,0 +1,74 @@
+{
+  "experiment": "traffic_profile",
+  "seed": 42,
+  "config": {
+    "simulation": {
+      "num_drones": 10,
+      "tick_ms": 100,
+      "leader_count": 1,
+      "relay_fraction": 0.2,
+      "history_size": 200,
+      "area": {
+        "x_m": 500.0,
+        "y_m": 500.0,
+        "z_min_m": 30.0,
+        "z_max_m": 120.0
+      },
+      "mobility": {
+        "model": "random_waypoint",
+        "speed_min_mps": 2.0,
+        "speed_max_mps": 12.0,
+        "pause_max_s": 3.0
+      },
+      "channel": {
+        "comm_range_m": 250.0,
+        "base_latency_ms": 2.0,
+        "jitter_ms": 1.0,
+        "bandwidth_mbps": 20.0,
+        "base_loss": 0.005,
+        "edge_loss": 0.05
+      },
+      "battery": {
+        "hover_pct_per_s": 0.01,
+        "move_pct_per_m": 0.0005,
+        "tx_pct_per_kb": 2e-05
+      }
+    },
+    "duration_s": 120
+  },
+  "environment": {
+    "python": "3.10.11",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "machine": "AMD64",
+    "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+    "packages": {
+      "numpy": "2.2.6",
+      "pandas": "2.3.3",
+      "scikit-learn": "1.7.2",
+      "xgboost": "3.2.0",
+      "ecdsa": "0.19.2",
+      "cryptography": "50.0.2",
+      "pydantic": "2.13.5",
+      "matplotlib": "3.10.9"
+    },
+    "git_commit": "1004505e04db99c0b277aad53cb4a9553cc3ec33"
+  },
+  "started_unix": 1791124841.8073316,
+  "duration_s": 8.67,
+  "metrics": {
+    "packets": 16571,
+    "auth_attempts": 23,
+    "auth_success": 23,
+    "auth_failures": {},
+    "summary_file": "C:\\Users\\madha\\Desktop\\Gulabi\\results\\processed\\traffic_profile\\protocol_summary.csv"
+  },
+  "files": [
+    "figures/traffic_profile_rates.png",
+    "figures/traffic_profile_sizes.png",
+    "processed/traffic_profile/protocol_summary.csv",
+    "processed/traffic_profile/rate_timeseries.csv",
+    "raw/traffic_profile/packets.csv",
+    "tables/traffic_profile_summary.csv"
+  ],
+  "result_type": "Our Experimental Result (software simulation on the machine above)"
+}

@@ -1,0 +1,135 @@
+{"ts": 1791124697.244805, "level": "INFO", "logger": "app.run_experiments", "event": "suite.start", "suite": "puf", "seed": 42, "quick": false}
+{"ts": 1791124720.178981, "level": "INFO", "logger": "app.run_experiments", "event": "suite.done", "suite": "puf", "seconds": 22.9, "output": "C:\\Users\\madha\\Desktop\\Gulabi\\results\\raw\\puf_quality\\manifest.json"}
+{"ts": 1791124720.178981, "level": "INFO", "logger": "app.run_experiments", "event": "suite.start", "suite": "auth", "seed": 42, "quick": false}
+{"ts": 1791124841.799947, "level": "INFO", "logger": "app.run_experiments", "event": "suite.done", "suite": "auth", "seconds": 121.6, "output": "C:\\Users\\madha\\Desktop\\Gulabi\\results\\raw\\authentication\\manifest.json"}
+{"ts": 1791124841.807332, "level": "INFO", "logger": "app.run_experiments", "event": "suite.start", "suite": "traffic", "seed": 42, "quick": false}
+{"ts": 1791124841.813372, "level": "INFO", "logger": "app.simulation.engine", "event": "swarm.created", "drones": 10, "relays": 2, "leaders": 1}
+{"ts": 1791124850.480712, "level": "INFO", "logger": "app.run_experiments", "event": "suite.done", "suite": "traffic", "seconds": 8.7, "output": "C:\\Users\\madha\\Desktop\\Gulabi\\results\\raw\\traffic_profile\\manifest.json"}
+{"ts": 1791124850.480712, "level": "INFO", "logger": "app.run_experiments", "event": "suite.start", "suite": "ids", "seed": 42, "quick": false}
+{"ts": 1791125070.885668, "level": "INFO", "logger": "app.run_experiments", "event": "ids.progress", "msg": "simulated 124 runs, 56694 windows"}
+{"ts": 1791125346.960542, "level": "INFO", "logger": "app.run_experiments", "event": "suite.done", "suite": "ids", "seconds": 496.5, "output": "C:\\Users\\madha\\Desktop\\Gulabi\\results\\raw\\ids\\manifest.json"}
+{"ts": 1791125371.084936, "level": "INFO", "logger": "app.run_experiments", "event": "suite.start", "suite": "showcase", "seed": 42, "quick": false}
+{"ts": 1791125371.093895, "level": "INFO", "logger": "app.simulation.engine", "event": "swarm.created", "drones": 10, "relays": 2, "leaders": 1}
+{"ts": 1791125375.070515, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D5", "state": "monitor", "t_ms": 6000, "trust": 0.797}
+{"ts": 1791125376.860626, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D5", "state": "normal", "t_ms": 15000, "trust": 0.869}
+{"ts": 1791125377.051754, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "monitor", "t_ms": 16000, "trust": 0.695}
+{"ts": 1791125377.170152, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "restrict", "t_ms": 17000, "trust": 0.527}
+{"ts": 1791125377.416842, "level": "INFO", "logger": "app.services.auth_coordinator", "event": "policy.reauthenticate", "drone": "D3", "revoked": 3, "t_ms": 19000}
+{"ts": 1791125377.416842, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "reauthenticate", "t_ms": 19000, "trust": 0.333}
+{"ts": 1791125378.470498, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "restrict", "t_ms": 24000, "trust": 0.463}
+{"ts": 1791125378.718107, "level": "INFO", "logger": "app.services.auth_coordinator", "event": "policy.reauthenticate", "drone": "D3", "revoked": 2, "t_ms": 25000}
+{"ts": 1791125378.718107, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "reauthenticate", "t_ms": 25000, "trust": 0.36}
+{"ts": 1791125381.167199, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "restrict", "t_ms": 38000, "trust": 0.473}
+{"ts": 1791125382.209103, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "monitor", "t_ms": 43000, "trust": 0.67}
+{"ts": 1791125383.623598, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "normal", "t_ms": 51000, "trust": 0.854}
+{"ts": 1791125386.821127, "level": "INFO", "logger": "app.run_experiments", "event": "suite.done", "suite": "showcase", "seconds": 15.7, "output": "C:\\Users\\madha\\Desktop\\Gulabi\\results\\raw\\showcase\\manifest.json"}
+{"ts": 1791125386.821127, "level": "INFO", "logger": "app.run_experiments", "event": "suite.start", "suite": "stride", "seed": 42, "quick": false}
+{"ts": 1791125670.866241, "level": "INFO", "logger": "app.simulation.engine", "event": "swarm.created", "drones": 10, "relays": 2, "leaders": 1}
+{"ts": 1791125677.787266, "level": "INFO", "logger": "app.run_experiments", "event": "suite.done", "suite": "stride", "seconds": 291.0, "output": "C:\\Users\\madha\\Desktop\\Gulabi\\results\\raw\\stride\\manifest.json"}
+{"ts": 1791125677.788246, "level": "INFO", "logger": "app.run_experiments", "event": "suite.start", "suite": "comparison", "seed": 42, "quick": false}
+{"ts": 1791126029.540986, "level": "INFO", "logger": "app.run_experiments", "event": "suite.done", "suite": "comparison", "seconds": 351.8, "output": "C:\\Users\\madha\\Desktop\\Gulabi\\results\\raw\\baseline_comparison\\manifest.json"}
+{"ts": 1791126344.314207, "level": "INFO", "logger": "app.run_experiments", "event": "suite.start", "suite": "showcase", "seed": 42, "quick": false}
+{"ts": 1791126344.321109, "level": "INFO", "logger": "app.simulation.engine", "event": "swarm.created", "drones": 10, "relays": 2, "leaders": 1}
+{"ts": 1791126348.120695, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D5", "state": "monitor", "t_ms": 6000, "trust": 0.797}
+{"ts": 1791126350.058799, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D5", "state": "normal", "t_ms": 15000, "trust": 0.869}
+{"ts": 1791126350.262122, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "monitor", "t_ms": 16000, "trust": 0.695}
+{"ts": 1791126350.392512, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "restrict", "t_ms": 17000, "trust": 0.527}
+{"ts": 1791126350.742361, "level": "INFO", "logger": "app.services.auth_coordinator", "event": "policy.reauthenticate", "drone": "D3", "revoked": 3, "t_ms": 19000}
+{"ts": 1791126350.742361, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "reauthenticate", "t_ms": 19000, "trust": 0.333}
+{"ts": 1791126351.887714, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "restrict", "t_ms": 24000, "trust": 0.463}
+{"ts": 1791126352.134622, "level": "INFO", "logger": "app.services.auth_coordinator", "event": "policy.reauthenticate", "drone": "D3", "revoked": 2, "t_ms": 25000}
+{"ts": 1791126352.134622, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "reauthenticate", "t_ms": 25000, "trust": 0.36}
+{"ts": 1791126354.417782, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "restrict", "t_ms": 38000, "trust": 0.474}
+{"ts": 1791126355.45606, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "monitor", "t_ms": 43000, "trust": 0.67}
+{"ts": 1791126356.917412, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "normal", "t_ms": 51000, "trust": 0.854}
+{"ts": 1791126360.310652, "level": "INFO", "logger": "app.run_experiments", "event": "suite.done", "suite": "showcase", "seconds": 16.0, "output": "C:\\Users\\madha\\Desktop\\Gulabi\\results\\raw\\showcase\\manifest.json"}
+{"ts": 1791126360.310652, "level": "INFO", "logger": "app.run_experiments", "event": "suite.start", "suite": "stride", "seed": 42, "quick": false}
+{"ts": 1791126646.278622, "level": "INFO", "logger": "app.simulation.engine", "event": "swarm.created", "drones": 10, "relays": 2, "leaders": 1}
+{"ts": 1791126652.931809, "level": "INFO", "logger": "app.run_experiments", "event": "suite.done", "suite": "stride", "seconds": 292.6, "output": "C:\\Users\\madha\\Desktop\\Gulabi\\results\\raw\\stride\\manifest.json"}
+{"ts": 1791126652.932816, "level": "INFO", "logger": "app.run_experiments", "event": "suite.start", "suite": "comparison", "seed": 42, "quick": false}
+{"ts": 1791127002.312074, "level": "INFO", "logger": "app.run_experiments", "event": "suite.done", "suite": "comparison", "seconds": 349.4, "output": "C:\\Users\\madha\\Desktop\\Gulabi\\results\\raw\\baseline_comparison\\manifest.json"}
+{"ts": 1791127002.313347, "level": "INFO", "logger": "app.run_experiments", "event": "suite.start", "suite": "ablation", "seed": 42, "quick": false}
+{"ts": 1791127521.916203, "level": "INFO", "logger": "app.run_experiments", "event": "suite.done", "suite": "ablation", "seconds": 519.6, "output": "C:\\Users\\madha\\Desktop\\Gulabi\\results\\raw\\ablation\\manifest.json"}
+{"ts": 1791127521.916203, "level": "INFO", "logger": "app.run_experiments", "event": "suite.start", "suite": "sensitivity", "seed": 42, "quick": false}
+{"ts": 1791127714.939823, "level": "INFO", "logger": "app.run_experiments", "event": "suite.done", "suite": "sensitivity", "seconds": 193.0, "output": "C:\\Users\\madha\\Desktop\\Gulabi\\results\\raw\\sensitivity\\manifest.json"}
+{"ts": 1791127714.939823, "level": "INFO", "logger": "app.run_experiments", "event": "suite.start", "suite": "stress", "seed": 42, "quick": false}
+{"ts": 1791127907.21502, "level": "INFO", "logger": "app.run_experiments", "event": "suite.done", "suite": "stress", "seconds": 192.3, "output": "C:\\Users\\madha\\Desktop\\Gulabi\\results\\raw\\stress\\manifest.json"}
+{"ts": 1791127907.21502, "level": "INFO", "logger": "app.run_experiments", "event": "suite.start", "suite": "scalability", "seed": 42, "quick": false}
+{"ts": 1791127909.446258, "level": "INFO", "logger": "app.simulation.engine", "event": "swarm.created", "drones": 5, "relays": 1, "leaders": 1}
+{"ts": 1791127911.266917, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "monitor", "t_ms": 11000, "trust": 0.682}
+{"ts": 1791127911.363968, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "restrict", "t_ms": 12000, "trust": 0.513}
+{"ts": 1791127911.557186, "level": "INFO", "logger": "app.services.auth_coordinator", "event": "policy.reauthenticate", "drone": "D3", "revoked": 2, "t_ms": 14000}
+{"ts": 1791127911.557186, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "reauthenticate", "t_ms": 14000, "trust": 0.323}
+{"ts": 1791127912.216823, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "quarantine", "t_ms": 20000, "trust": 0.199}
+{"ts": 1791127915.765541, "level": "INFO", "logger": "app.simulation.engine", "event": "swarm.created", "drones": 10, "relays": 2, "leaders": 1}
+{"ts": 1791127917.840833, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D5", "state": "monitor", "t_ms": 6000, "trust": 0.797}
+{"ts": 1791127918.944869, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "monitor", "t_ms": 11000, "trust": 0.682}
+{"ts": 1791127919.078614, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "restrict", "t_ms": 12000, "trust": 0.513}
+{"ts": 1791127919.424032, "level": "INFO", "logger": "app.services.auth_coordinator", "event": "policy.reauthenticate", "drone": "D3", "revoked": 3, "t_ms": 14000}
+{"ts": 1791127919.424032, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "reauthenticate", "t_ms": 14000, "trust": 0.335}
+{"ts": 1791127919.424032, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D5", "state": "normal", "t_ms": 14000, "trust": 0.853}
+{"ts": 1791127920.949888, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "quarantine", "t_ms": 22000, "trust": 0.173}
+{"ts": 1791127925.985099, "level": "INFO", "logger": "app.simulation.engine", "event": "swarm.created", "drones": 25, "relays": 5, "leaders": 1}
+{"ts": 1791127934.898177, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "monitor", "t_ms": 11000, "trust": 0.669}
+{"ts": 1791127935.496723, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "restrict", "t_ms": 12000, "trust": 0.5}
+{"ts": 1791127935.912318, "level": "INFO", "logger": "app.services.auth_coordinator", "event": "policy.reauthenticate", "drone": "D3", "revoked": 3, "t_ms": 13000}
+{"ts": 1791127935.912318, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "reauthenticate", "t_ms": 13000, "trust": 0.39}
+{"ts": 1791127936.596838, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "restrict", "t_ms": 14000, "trust": 0.473}
+{"ts": 1791127939.019496, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "monitor", "t_ms": 20000, "trust": 0.679}
+{"ts": 1791127940.872175, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "restrict", "t_ms": 23000, "trust": 0.571}
+{"ts": 1791127941.993015, "level": "INFO", "logger": "app.services.auth_coordinator", "event": "policy.reauthenticate", "drone": "D3", "revoked": 2, "t_ms": 25000}
+{"ts": 1791127941.993015, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "reauthenticate", "t_ms": 25000, "trust": 0.338}
+{"ts": 1791127943.342851, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "restrict", "t_ms": 28000, "trust": 0.465}
+{"ts": 1791127950.569557, "level": "INFO", "logger": "app.simulation.engine", "event": "swarm.created", "drones": 50, "relays": 10, "leaders": 1}
+{"ts": 1791127960.862944, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D32", "state": "monitor", "t_ms": 1000, "trust": 0.602}
+{"ts": 1791127965.179179, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D5", "state": "monitor", "t_ms": 6000, "trust": 0.788}
+{"ts": 1791127966.206724, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D32", "state": "normal", "t_ms": 7000, "trust": 0.851}
+{"ts": 1791127967.287855, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D38", "state": "monitor", "t_ms": 8000, "trust": 0.687}
+{"ts": 1791127973.440845, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D17", "state": "monitor", "t_ms": 11000, "trust": 0.735}
+{"ts": 1791127973.441927, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "monitor", "t_ms": 11000, "trust": 0.675}
+{"ts": 1791127973.441927, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D30", "state": "monitor", "t_ms": 11000, "trust": 0.771}
+{"ts": 1791127974.539291, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "restrict", "t_ms": 12000, "trust": 0.506}
+{"ts": 1791127975.3284, "level": "INFO", "logger": "app.services.auth_coordinator", "event": "policy.reauthenticate", "drone": "D3", "revoked": 3, "t_ms": 13000}
+{"ts": 1791127975.3284, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "reauthenticate", "t_ms": 13000, "trust": 0.394}
+{"ts": 1791127977.243784, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "restrict", "t_ms": 14000, "trust": 0.451}
+{"ts": 1791127977.919323, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D30", "state": "normal", "t_ms": 15000, "trust": 0.854}
+{"ts": 1791127977.919323, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D5", "state": "normal", "t_ms": 15000, "trust": 0.856}
+{"ts": 1791127981.504284, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D17", "state": "normal", "t_ms": 18000, "trust": 0.864}
+{"ts": 1791127986.331814, "level": "INFO", "logger": "app.services.auth_coordinator", "event": "policy.reauthenticate", "drone": "D3", "revoked": 4, "t_ms": 21000}
+{"ts": 1791127986.331814, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "reauthenticate", "t_ms": 21000, "trust": 0.384}
+{"ts": 1791127990.735706, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D30", "state": "monitor", "t_ms": 24000, "trust": 0.737}
+{"ts": 1791127998.608754, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D38", "state": "normal", "t_ms": 28000, "trust": 0.863}
+{"ts": 1791128014.458736, "level": "INFO", "logger": "app.simulation.engine", "event": "swarm.created", "drones": 100, "relays": 20, "leaders": 1}
+{"ts": 1791128049.841402, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D32", "state": "restrict", "t_ms": 1000, "trust": 0.563}
+{"ts": 1791128053.37271, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D14", "state": "monitor", "t_ms": 2000, "trust": 0.714}
+{"ts": 1791128056.881974, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D32", "state": "monitor", "t_ms": 3000, "trust": 0.7}
+{"ts": 1791128056.883973, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D84", "state": "monitor", "t_ms": 3000, "trust": 0.798}
+{"ts": 1791128062.496619, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D84", "state": "normal", "t_ms": 5000, "trust": 0.85}
+{"ts": 1791128065.595839, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D5", "state": "monitor", "t_ms": 6000, "trust": 0.798}
+{"ts": 1791128072.132377, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D32", "state": "normal", "t_ms": 8000, "trust": 0.855}
+{"ts": 1791128072.132377, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D38", "state": "monitor", "t_ms": 8000, "trust": 0.705}
+{"ts": 1791128072.134887, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D8", "state": "monitor", "t_ms": 8000, "trust": 0.734}
+{"ts": 1791128074.858053, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D14", "state": "normal", "t_ms": 9000, "trust": 0.861}
+{"ts": 1791128078.460193, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D88", "state": "monitor", "t_ms": 10000, "trust": 0.735}
+{"ts": 1791128089.786896, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "monitor", "t_ms": 11000, "trust": 0.691}
+{"ts": 1791128089.786896, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D30", "state": "monitor", "t_ms": 11000, "trust": 0.787}
+{"ts": 1791128089.788332, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D74", "state": "monitor", "t_ms": 11000, "trust": 0.74}
+{"ts": 1791128093.191796, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "restrict", "t_ms": 12000, "trust": 0.524}
+{"ts": 1791128102.444449, "level": "INFO", "logger": "app.services.auth_coordinator", "event": "policy.reauthenticate", "drone": "D3", "revoked": 4, "t_ms": 14000}
+{"ts": 1791128102.445559, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "reauthenticate", "t_ms": 14000, "trust": 0.33}
+{"ts": 1791128107.024847, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D30", "state": "normal", "t_ms": 15000, "trust": 0.864}
+{"ts": 1791128107.025944, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D5", "state": "normal", "t_ms": 15000, "trust": 0.852}
+{"ts": 1791128107.02718, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D8", "state": "normal", "t_ms": 15000, "trust": 0.858}
+{"ts": 1791128114.234123, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D51", "state": "monitor", "t_ms": 17000, "trust": 0.756}
+{"ts": 1791128114.23592, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D74", "state": "normal", "t_ms": 17000, "trust": 0.863}
+{"ts": 1791128137.005487, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D3", "state": "quarantine", "t_ms": 22000, "trust": 0.195}
+{"ts": 1791128137.006598, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D38", "state": "normal", "t_ms": 22000, "trust": 0.856}
+{"ts": 1791128162.744663, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D23", "state": "monitor", "t_ms": 26000, "trust": 0.736}
+{"ts": 1791128177.024921, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D86", "state": "monitor", "t_ms": 29000, "trust": 0.754}
+{"ts": 1791128177.024921, "level": "INFO", "logger": "app.policy.enforcement", "event": "policy.decision", "drone": "D88", "state": "normal", "t_ms": 29000, "trust": 0.852}
+{"ts": 1791128184.316233, "level": "INFO", "logger": "app.run_experiments", "event": "suite.done", "suite": "scalability", "seconds": 277.1, "output": "C:\\Users\\madha\\Desktop\\Gulabi\\results\\raw\\scalability\\manifest.json"}
+{"ts": 1791128184.316233, "level": "INFO", "logger": "app.run_experiments", "event": "suite.start", "suite": "diagrams", "seed": 42, "quick": false}
+{"ts": 1791128185.592632, "level": "INFO", "logger": "app.simulation.engine", "event": "swarm.created", "drones": 12, "relays": 2, "leaders": 1}
+{"ts": 1791128187.890577, "level": "INFO", "logger": "app.run_experiments", "event": "suite.done", "suite": "diagrams", "seconds": 3.6, "output": "C:\\Users\\madha\\Desktop\\Gulabi\\results\\raw\\diagrams\\manifest.json"}
+{"ts": 1791128187.891578, "level": "INFO", "logger": "app.run_experiments", "event": "suite.start", "suite": "report", "seed": 42, "quick": false}
+{"ts": 1791128187.934268, "level": "INFO", "logger": "app.run_experiments", "event": "suite.done", "suite": "report", "seconds": 0.0, "output": "(WindowsPath('C:/Users/madha/Desktop/Gulabi/results/reports/final_tables.md'), WindowsPath('C:/Users/madha/Desktop/Gulabi/results/reports/figures_index.md'))"}

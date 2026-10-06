@@ -1,0 +1,10 @@
+**Ablation study of the adaptive framework**
+
+| system                          |   detection_rate |   fpr_flag_rate |   disruption_rate |   framed_rate |    fnr |   detection_ms_median |   response_ms_median |   mitigation_rate |   collateral_rate |   monitor_ms_per_window |   security_bytes_per_s |
+|:--------------------------------|-----------------:|----------------:|------------------:|--------------:|-------:|----------------------:|---------------------:|------------------:|------------------:|------------------------:|-----------------------:|
+| D: Full adaptive framework      |           1      |          0.0129 |            0      |          0    | 0      |                  4000 |                 2200 |            0.9549 |            0      |                 90.094  |                1813.64 |
+| Full - Trust Engine             |           1      |          0.0013 |            0.0011 |          1    | 0      |                  1000 |                 1100 |            0.9859 |            0.0003 |                129.28   |                1727.47 |
+| Full - ML IDS                   |           1      |          0.1256 |            0.0864 |          0.25 | 0      |                  2000 |                 3100 |            0.9094 |            0.0585 |                 85.5203 |                1804.98 |
+| Full - Policy Engine            |           1      |          0.0129 |            0      |          0    | 0      |                  4000 |                  nan |            0.6811 |            0      |                128.327  |                1817.96 |
+| Full - attribution-aware fusion |           1      |          0.0129 |            0      |          1    | 0      |                  1000 |                 2100 |            0.9631 |            0      |                127.544  |                1754.12 |
+| A: Authentication only (D2DAP)  |           0.6667 |          0      |            0      |          0    | 0.3333 |                   nan |                  nan |            0.6818 |            0      |                  0      |                 629.24 |

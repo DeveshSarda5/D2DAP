@@ -1,0 +1,74 @@
+{
+  "experiment": "authentication",
+  "seed": 42,
+  "config": {
+    "settings": {
+      "micro_reps": 300,
+      "trials": 200,
+      "warmup": 10,
+      "memory_trials": 30,
+      "n_drones": 10,
+      "noise_trials": 40
+    },
+    "configs": [
+      [
+        128,
+        "hint"
+      ],
+      [
+        192,
+        "hint"
+      ],
+      [
+        256,
+        "hint"
+      ],
+      [
+        128,
+        "trial"
+      ]
+    ],
+    "network_delay_ms": 0,
+    "note": "latency = measured compute time only"
+  },
+  "environment": {
+    "python": "3.10.11",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "machine": "AMD64",
+    "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+    "packages": {
+      "numpy": "2.2.6",
+      "pandas": "2.3.3",
+      "scikit-learn": "1.7.2",
+      "xgboost": "3.2.0",
+      "ecdsa": "0.19.2",
+      "cryptography": "50.0.2",
+      "pydantic": "2.13.5",
+      "matplotlib": "3.10.9"
+    },
+    "git_commit": "1004505e04db99c0b277aad53cb4a9553cc3ec33"
+  },
+  "started_unix": 1791124720.1789813,
+  "duration_s": 121.618,
+  "metrics": {
+    "success_rate_min": 1.0,
+    "latency_ms_mean_L128_hint": 32.0992165
+  },
+  "files": [
+    "figures/authentication_communication.png",
+    "figures/authentication_computation_breakdown.png",
+    "figures/authentication_latency.png",
+    "figures/authentication_puf_noise.png",
+    "processed/authentication/maka_summary.csv",
+    "processed/authentication/micro_ops_summary.csv",
+    "raw/authentication/maka_trials_raw.csv",
+    "raw/authentication/micro_ops_raw.csv",
+    "raw/authentication/puf_noise_auth.csv",
+    "tables/authentication_cycles_estimate.csv",
+    "tables/authentication_micro_ops.csv",
+    "tables/authentication_puf_noise.csv",
+    "tables/authentication_table1_performance.csv",
+    "tables/authentication_table2_communication.csv"
+  ],
+  "result_type": "Our Experimental Result (software simulation on the machine above)"
+}

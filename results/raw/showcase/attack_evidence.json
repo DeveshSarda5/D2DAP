@@ -1,0 +1,23 @@
+{
+  "attack_id": "flooding-1",
+  "kind": "flooding",
+  "stride": "D",
+  "attacker": "D3",
+  "target": "D3",
+  "start_ms": 15000,
+  "end_ms": 45000,
+  "packets_attempted": 621,
+  "packets_sent": 424,
+  "packets_accepted": 117,
+  "packets_dropped": 307,
+  "drop_reasons": {
+    "policy:rate_limited": 223,
+    "channel_loss": 9,
+    "out_of_range": 75
+  },
+  "auth_attempts": 0,
+  "auth_accepted": 0,
+  "auth_failures": {},
+  "victim_compute_ms": 0.0,
+  "crp_consumed": 0
+}

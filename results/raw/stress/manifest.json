@@ -1,0 +1,69 @@
+{
+  "experiment": "stress",
+  "seed": 42,
+  "config": {
+    "scenario": {
+      "num_drones": 10,
+      "duration_ms": 60000,
+      "attack_start_ms": 15000,
+      "attack_duration_ms": 30000,
+      "rate_pps": 20.0,
+      "target": "D3",
+      "rekey_interval_ms": 10000,
+      "area_m": 300.0,
+      "traffic": null,
+      "crp_count": 256,
+      "reprovision_below": null
+    },
+    "seeds": [
+      42,
+      43
+    ],
+    "rates": [
+      0.0,
+      0.01,
+      0.05
+    ],
+    "systems": [
+      "d2dap_ids",
+      "d2dap_ids_trust",
+      "adaptive"
+    ],
+    "kinds": [
+      "benign",
+      "flooding",
+      "privilege_escalation",
+      "spoofing"
+    ],
+    "note": "SYNTHETIC false alarms injected into IDS output"
+  },
+  "environment": {
+    "python": "3.10.11",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "machine": "AMD64",
+    "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+    "packages": {
+      "numpy": "2.2.6",
+      "pandas": "2.3.3",
+      "scikit-learn": "1.7.2",
+      "xgboost": "3.2.0",
+      "ecdsa": "0.19.2",
+      "cryptography": "50.0.2",
+      "pydantic": "2.13.5",
+      "matplotlib": "3.10.9"
+    },
+    "git_commit": "ad3ae5e95bf98faec109ab854fa18dd62423576c"
+  },
+  "started_unix": 1791127714.9398234,
+  "duration_s": 192.273,
+  "metrics": {
+    "rows": 72
+  },
+  "files": [
+    "figures/stress_disruption_vs_noise.png",
+    "processed/stress/summary.csv",
+    "raw/stress/runs.csv",
+    "tables/stress_table.csv"
+  ],
+  "result_type": "Our Experimental Result (software simulation on the machine above)"
+}

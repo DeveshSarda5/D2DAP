@@ -1,0 +1,13 @@
+**Detector-noise stress test (SYNTHETIC IDS false alarms)**
+
+| system                          |   false_alarm_rate |   disruption_rate |   collateral_rate |   fpr_flag_rate |   mitigation_rate |   detection_rate |
+|:--------------------------------|-------------------:|------------------:|------------------:|----------------:|------------------:|-----------------:|
+| B: D2DAP + ML IDS (alert/block) |               0    |            0.0009 |            0      |          0.0009 |            0.9187 |                1 |
+| B: D2DAP + ML IDS (alert/block) |               0.01 |            0.0112 |            0.009  |          0.0112 |            0.9166 |                1 |
+| B: D2DAP + ML IDS (alert/block) |               0.05 |            0.0399 |            0.0316 |          0.0399 |            0.9368 |                1 |
+| C: D2DAP + IDS + Trust (binary) |               0    |            0      |            0      |          0      |            0.6198 |                1 |
+| C: D2DAP + IDS + Trust (binary) |               0.01 |            0      |            0      |          0      |            0.6186 |                1 |
+| C: D2DAP + IDS + Trust (binary) |               0.05 |            0      |            0      |          0      |            0.6473 |                1 |
+| D: Full adaptive framework      |               0    |            0      |            0      |          0.0231 |            0.9265 |                1 |
+| D: Full adaptive framework      |               0.01 |            0      |            0      |          0.0574 |            0.9265 |                1 |
+| D: Full adaptive framework      |               0.05 |            0      |            0      |          0.1049 |            0.9433 |                1 |

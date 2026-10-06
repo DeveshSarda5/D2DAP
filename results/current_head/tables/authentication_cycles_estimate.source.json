@@ -1,0 +1,9 @@
+{
+  "experiment": "authentication",
+  "seed": 42,
+  "caption": "ESTIMATED drone cycles (our op counts x paper per-op cycles) vs Literature",
+  "sources": [
+    "processed/authentication/maka_summary.csv"
+  ],
+  "git_commit": "64b9b7f7768467f0a0fa8476104ec4dde74b9e32"
+}

@@ -1,0 +1,9 @@
+{
+  "experiment": "authentication",
+  "seed": 42,
+  "caption": "Authentication success vs software-PUF noise (D2DAP has no error correction)",
+  "sources": [
+    "raw/authentication/puf_noise_auth.csv"
+  ],
+  "git_commit": "64b9b7f7768467f0a0fa8476104ec4dde74b9e32"
+}

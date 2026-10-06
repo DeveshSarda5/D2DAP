@@ -1,0 +1,9 @@
+{
+  "experiment": "ids",
+  "seed": 42,
+  "caption": "Macro-F1 under robustness splits (dedup test; unseen low intensity)",
+  "sources": [
+    "processed/ids/metrics_all.csv"
+  ],
+  "git_commit": "64b9b7f7768467f0a0fa8476104ec4dde74b9e32"
+}

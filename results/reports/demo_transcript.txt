@@ -1,0 +1,147 @@
+
+==============================================================================
+ STEP 1: Create the drone network
+------------------------------------------------------------------------------
+ 10 simulated drones (1 leader, relays, workers) with mobility and Wi-Fi-like links.
+==============================================================================
+ Created 10 drones; 40 radio links in range.
+
+==============================================================================
+ STEP 2: Register drones with the Control Server (D2DAP Setup + Registration)
+------------------------------------------------------------------------------
+ Each drone gets an ID, 128-bit PUF challenges and Shamir shares b=F(a); A stays secret.
+==============================================================================
+ Curve P-256, hash sha3_256, cipher AES-128-CTR
+ Every drone holds 256 one-time CRPs (SOFTWARE PUF simulation).
+
+==============================================================================
+ STEP 3: Authenticate drones with D2DAP (drone-to-drone, no server involved)
+------------------------------------------------------------------------------
+ Sessions are created on demand when a drone first sends data to a peer.
+==============================================================================
+ 8 mutual authentications completed; mean compute 48.9 ms per MAKA (both sides).
+   D3 <-> D1: session established
+   D2 <-> D1: session established
+   D10 <-> D1: session established
+   D4 <-> D1: session established
+
+==============================================================================
+ STEP 4: Normal operation
+------------------------------------------------------------------------------
+ 15 s of telemetry, video and heartbeats; the IDS and trust engine watch every 1 s window.
+==============================================================================
+ drone role    auth state        trust  security state   CRPs
+ D1    leader  authenticated     0.951  NORMAL            238
+ D2    relay   authenticated     0.954  NORMAL            254
+ D3    relay   authenticated     0.955  NORMAL            253
+ D4    worker  authenticated     0.954  NORMAL            254
+ D5    worker  authenticated     0.892  NORMAL            253
+ D6    worker  authenticated     0.954  NORMAL            254
+ D7    worker  authenticated     0.950  NORMAL            254
+ D8    worker  authenticated     0.936  NORMAL            254
+ D9    worker  authenticated     0.954  NORMAL            254
+ D10   worker  authenticated     0.954  NORMAL            254
+
+==============================================================================
+ STEP 5: Launch attack: flooding (compromised insider)
+------------------------------------------------------------------------------
+ Target D3; STRIDE D; 30 s.
+==============================================================================
+
+==============================================================================
+ STEP 6: Detect the attack
+------------------------------------------------------------------------------
+ ML IDS alerts and D2DAP rejections during the attack window.
+==============================================================================
+ IDS alerts during the attack: 12; first on D3 after 1.0 s (P(attack)=1.00, class flooding)
+ Attack packets: 251 sent, 92 accepted; dropped by reason: {'policy:rate_limited': 153, 'no_session': 1, 'channel_loss': 4, 'policy:quarantine': 1}
+
+==============================================================================
+ STEP 7: Update trust
+------------------------------------------------------------------------------
+ Trust of the targeted identity (attribution-aware evidence fusion).
+==============================================================================
+   t=  16.0s  trust 0.96 -> 0.96  (IDS P(attack)=0.00 (benign), attribution=1.00)
+   t=  19.0s  trust 0.96 -> 0.69  (IDS P(attack)=1.00 (flooding), attribution=1.00; 1 successful MAKA; transmission-rate anomaly)
+   t=  22.0s  trust 0.43 -> 0.34  (IDS P(attack)=1.00 (flooding), attribution=1.00; transmission-rate anomaly; repeat-offender x1.45)
+   t=  25.0s  trust 0.36 -> 0.41  (IDS P(attack)=0.00 (benign), attribution=1.00; repeat-offender x1.75)
+   t=  28.0s  trust 0.35 -> 0.29  (IDS P(attack)=1.00 (flooding), attribution=1.00; transmission-rate anomaly; repeat-offender x2.05)
+   t=  31.0s  trust 0.20 -> 0.17  (IDS P(attack)=1.00 (flooding), attribution=1.00; transmission-rate anomaly; repeat-offender x2.50)
+   t=  34.0s  trust 0.22 -> 0.26  (IDS P(attack)=0.00 (benign), attribution=1.00; repeat-offender x2.65)
+   t=  37.0s  trust 0.34 -> 0.39  (IDS P(attack)=0.00 (benign), attribution=1.00; repeat-offender x2.65)
+   t=  40.0s  trust 0.48 -> 0.52  (IDS P(attack)=0.00 (benign), attribution=1.00; repeat-offender x2.65)
+   t=  44.0s  trust 0.60 -> 0.65  (IDS P(attack)=0.00 (benign), attribution=1.00; repeat-offender x2.65)
+
+==============================================================================
+ STEP 8: Adaptive policy response
+------------------------------------------------------------------------------
+ Every decision with its explanation.
+==============================================================================
+
+   Drone D3
+   Trust before = 0.96
+   Attack probability = 1.00 (flooding)
+   Authentication failures = 0
+   Verified (identity-bound) traffic = 100%
+   Evidence: IDS P(attack)=1.00 (flooding), attribution=1.00; 1 successful MAKA; transmission-rate anomaly
+   Trust after = 0.69
+   Decision = MONITOR (from NORMAL)
+   Rule = trust band
+   Actions = increase_monitoring
+
+   Drone D3
+   Trust before = 0.69
+   Attack probability = 1.00 (flooding)
+   Authentication failures = 0
+   Verified (identity-bound) traffic = 100%
+   Evidence: IDS P(attack)=1.00 (flooding), attribution=1.00; transmission-rate anomaly; repeat-offender x1.15
+   Trust after = 0.53
+   Decision = RESTRICT (from MONITOR)
+   Rule = trust band
+   Actions = rate_limit, block_privileged_commands
+
+   Drone D3
+   Trust before = 0.43
+   Attack probability = 1.00 (flooding)
+   Authentication failures = 0
+   Verified (identity-bound) traffic = 100%
+   Evidence: IDS P(attack)=1.00 (flooding), attribution=1.00; transmission-rate anomaly; repeat-offender x1.45
+   Trust after = 0.34
+   Decision = REAUTHENTICATE (from RESTRICT)
+   Rule = trust band
+   Actions = rate_limit, block_privileged_commands, revoke_sessions, force_reauthentication
+
+   Drone D3
+   Trust before = 0.20
+   Attack probability = 1.00 (flooding)
+   Authentication failures = 0
+   Verified (identity-bound) traffic = 100%
+   Evidence: IDS P(attack)=1.00 (flooding), attribution=1.00; transmission-rate anomaly; repeat-offender x2.50
+   Trust after = 0.17
+   Decision = QUARANTINE (from REAUTHENTICATE)
+   Rule = trust band
+   Actions = revoke_sessions, drop_all_traffic, block_new_sessions, broadcast_quarantine_notice
+
+==============================================================================
+ STEP 9: Recovery and final security state
+------------------------------------------------------------------------------
+ 35 s after the attack ends: honest drones stay NORMAL; a reformed drone can recover.
+==============================================================================
+ drone role    auth state        trust  security state   CRPs
+ D1    leader  authenticated     0.954  NORMAL            177
+ D2    relay   authenticated     0.957  NORMAL            244
+ D3    relay   authenticated     0.957  NORMAL            245
+ D4    worker  authenticated     0.957  NORMAL            246
+ D5    worker  authenticated     0.883  NORMAL            247
+ D6    worker  authenticated     0.874  NORMAL            246
+ D7    worker  authenticated     0.953  NORMAL            247
+ D8    worker  authenticated     0.907  NORMAL            247
+ D9    worker  authenticated     0.957  NORMAL            247
+ D10   worker  authenticated     0.956  NORMAL            248
+
+==============================================================================
+ STEP 10: Save results
+------------------------------------------------------------------------------
+ results\demo\20261004-212650
+==============================================================================
+ Saved trust_updates.csv, policy_decisions.csv, ids_alerts.csv, packets.csv, summary.json

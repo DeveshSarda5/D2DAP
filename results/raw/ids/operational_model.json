@@ -1,0 +1,51 @@
+{
+  "selected_model": "xgboost",
+  "selection": "max CV macro-F1 on training split",
+  "cv_macro_f1": 0.9535181115016579,
+  "best_params": {
+    "clf__max_depth": 4,
+    "clf__subsample": 0.8
+  },
+  "classes": [
+    "abnormal",
+    "benign",
+    "dos",
+    "flooding",
+    "impersonation",
+    "privilege_escalation",
+    "replay",
+    "spoofing",
+    "tampering",
+    "unauthorized_access"
+  ],
+  "features": [
+    "tx_count",
+    "rx_count",
+    "bytes_total",
+    "size_mean",
+    "size_std",
+    "size_max",
+    "unique_dst",
+    "iat_mean_ms",
+    "iat_std_ms",
+    "frac_telemetry",
+    "frac_video",
+    "frac_command",
+    "frac_heartbeat",
+    "frac_auth",
+    "auth_req_count",
+    "auth_unique_dst",
+    "auth_fail_count",
+    "auth_accept_count",
+    "unauth_data_count",
+    "integrity_fail_count",
+    "replay_reject_count",
+    "no_session_count",
+    "seq_dup_count",
+    "seq_backjump_count",
+    "cmd_count",
+    "src_is_leader",
+    "verified_count",
+    "verified_cmd_count"
+  ]
+}

@@ -1,0 +1,20 @@
+Current-head verification run
+Date: 2026-10-06
+Commit: 64b9b7f7768467f0a0fa8476104ec4dde74b9e32
+
+PASS: .venv\Scripts\python.exe -m compileall -q backend scripts
+PASS: .venv\Scripts\python.exe -m pytest backend\tests\unit -q
+      169 passed in 17.06s
+PASS: selected integration tests (test_api.py, test_attacks.py,
+      test_dataset.py, test_secure_traffic.py)
+      44 passed, 1 warning in 33.85s
+PASS: .venv\Scripts\python.exe -m pytest backend\tests\e2e -q
+      9 passed in 51.40s
+
+BLOCKED BY HOST APPLICATION-CONTROL POLICY:
+- scripts\check_all.py could not run Ruff's executable: WinError 4551.
+- mypy could not load its native main component: Application Control DLL block.
+- full pytest collection stopped when matplotlib._path was blocked by the same policy.
+
+The blocked checks are environment/toolchain failures; the runnable unit, selected
+integration, and E2E tests passed.

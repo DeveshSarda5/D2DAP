@@ -1,0 +1,10 @@
+system,variant,false_alarm_rate,disruption_rate,collateral_rate,fpr_flag_rate,mitigation_rate,detection_rate
+B: D2DAP + ML IDS (alert/block),d2dap_ids,0.0,0.0009027777777777778,4.8750082533154335e-05,0.0009027777777777778,0.9186641139299502,1.0
+B: D2DAP + ML IDS (alert/block),d2dap_ids,0.01,0.01125,0.009022900661524422,0.01125,0.9166437862016096,1.0
+B: D2DAP + ML IDS (alert/block),d2dap_ids,0.05,0.03986111111111111,0.03160547083030939,0.03986111111111111,0.9367586431521643,1.0
+C: D2DAP + IDS + Trust (binary),d2dap_ids_trust,0.0,0.0,0.0,0.0,0.6198179254059342,1.0
+C: D2DAP + IDS + Trust (binary),d2dap_ids_trust,0.01,0.0,0.0,0.0,0.6185921537526649,1.0
+C: D2DAP + IDS + Trust (binary),d2dap_ids_trust,0.05,0.0,0.0,0.0,0.6472505255044305,1.0
+D: Full adaptive framework,adaptive,0.0,0.0,0.0,0.023148148148148147,0.926505100182565,1.0
+D: Full adaptive framework,adaptive,0.01,0.0,0.0,0.05738425925925926,0.926505100182565,1.0
+D: Full adaptive framework,adaptive,0.05,0.0,0.0,0.1048611111111111,0.9433111870982772,1.0

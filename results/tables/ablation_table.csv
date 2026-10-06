@@ -1,0 +1,7 @@
+system,detection_rate,fpr_flag_rate,disruption_rate,framed_rate,fnr,detection_ms_median,response_ms_median,mitigation_rate,collateral_rate,monitor_ms_per_window,security_bytes_per_s
+D: Full adaptive framework,1.0,0.0129,0.0,0.0,0.0,4000.0,2200.0,0.9549,0.0,97.4578,1813.6444
+Full - Trust Engine,1.0,0.0013,0.0011,1.0,0.0,1000.0,1100.0,0.9859,0.0003,99.097,1727.4711
+Full - ML IDS,1.0,0.1256,0.0864,0.25,0.0,2000.0,3100.0,0.9094,0.0585,71.4361,1804.98
+Full - Policy Engine,1.0,0.0129,0.0,0.0,0.0,4000.0,,0.6811,0.0,99.0824,1817.9622
+Full - attribution-aware fusion,1.0,0.0129,0.0,1.0,0.0,1000.0,2100.0,0.9631,0.0,100.4482,1754.1222
+A: Authentication only (D2DAP),0.6667,0.0,0.0,0.0,0.3333,,,0.6818,0.0,0.0,629.24

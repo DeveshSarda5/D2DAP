@@ -1,0 +1,9 @@
+{
+  "experiment": "showcase",
+  "seed": 42,
+  "caption": "Adaptive response timeline",
+  "sources": [
+    "raw/showcase/policy_decisions.csv"
+  ],
+  "git_commit": "ad3ae5e95bf98faec109ab854fa18dd62423576c"
+}

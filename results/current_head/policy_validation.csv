@@ -1,0 +1,6 @@
+trust,decision,expected_band
+0.95,none,normal
+0.7,monitor,monitor
+0.5,restrict,restrict
+0.3,reauthenticate,reauthenticate
+0.1,quarantine,quarantine

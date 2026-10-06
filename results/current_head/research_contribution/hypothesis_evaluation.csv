@@ -1,0 +1,5 @@
+hypothesis,status,evidence,qualification
+H1,SUPPORTED,Adaptive comparison and ablation,Within tested simulated scenarios
+H2,PARTIALLY SUPPORTED,Repeated malicious behaviour reaches graded states; timestamps are aggregated,No complete per-event response-time distribution
+H3,SUPPORTED,"Authentication, monitor, trust/policy, and runtime timings",Host-dependent software overhead
+H4,SUPPORTED,Current-head IDS metrics and stress split,Only simulator-generated traffic

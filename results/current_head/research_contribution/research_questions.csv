@@ -1,0 +1,7 @@
+research_question,experiment,metric,result,interpretation,limitation
+RQ1,D2DAP authentication and STRIDE,success rate; rejection signals,All current authentication trials succeeded; attacks were exercised,Reproducible in the software simulation,Not a formal proof or hardware deployment
+RQ2,Authentication benchmark,mean/median/std/P95/P99 latency; bytes,128-bit hint mean 32.77 ms; 304 bytes,D2DAP introduces measurable software cost,Host-dependent timing
+RQ3,IDS model and unseen-rate stress,"macro-F1, binary-F1, FPR/FNR",XGBoost macro-F1 0.9439; stress macro-F1 0.8288,Useful within generated simulator data,Real-world generalization unestablished
+RQ4,Trust validation and attribution ablation,trust trajectory and policy state,Verified insider evidence penalizes faster; unverified spoofing is discounted,Trust adds identity-aware information beyond IDS probability,"Controlled evidence sequence, not field data"
+RQ5,Baseline/adaptive and ablation comparison,"mitigation, response, state, collateral",Adaptive framework mitigates 0.9549 on aggregate with 2200 ms median response,Supports a measurable system-level response benefit,Variant metrics are simulator-specific
+RQ6,Scalability and variant overhead outputs,"IDS, trust/policy, monitor and runtime costs","Costs are recorded for 5, 10, 25, 50, 100 drones",Adaptive processing introduces measurable overhead,Trust/policy components are combined

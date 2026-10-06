@@ -1,0 +1,50 @@
+{
+  "experiment": "scalability",
+  "seed": 42,
+  "config": {
+    "sizes": [
+      5,
+      10,
+      25,
+      50,
+      100
+    ],
+    "auth_trials": 30,
+    "framework_duration_ms": 30000,
+    "execution": "sequential"
+  },
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "packages": {
+      "numpy": "2.4.6",
+      "pandas": "2.3.3",
+      "scikit-learn": "1.7.2",
+      "xgboost": "3.2.0",
+      "ecdsa": "0.19.2",
+      "cryptography": "50.0.2",
+      "pydantic": "2.13.5",
+      "matplotlib": "3.11.2"
+    },
+    "git_commit": "64b9b7f7768467f0a0fa8476104ec4dde74b9e32"
+  },
+  "started_unix": 1791227020.916018,
+  "duration_s": 267.513,
+  "metrics": {
+    "sizes": [
+      5,
+      10,
+      25,
+      50,
+      100
+    ]
+  },
+  "files": [
+    "figures/scalability_scalability.png",
+    "raw/scalability/scalability.csv",
+    "tables/scalability_table7.csv"
+  ],
+  "result_type": "Our Experimental Result (software simulation on the machine above)"
+}

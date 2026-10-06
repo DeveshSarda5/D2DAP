@@ -1,0 +1,9 @@
+{
+  "experiment": "authentication",
+  "seed": 42,
+  "caption": "Per-operation software cost (microseconds, ours)",
+  "sources": [
+    "raw/authentication/micro_ops_raw.csv"
+  ],
+  "git_commit": "64b9b7f7768467f0a0fa8476104ec4dde74b9e32"
+}

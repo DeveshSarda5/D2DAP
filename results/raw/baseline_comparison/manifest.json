@@ -1,0 +1,70 @@
+{
+  "experiment": "baseline_comparison",
+  "seed": 42,
+  "config": {
+    "scenario": {
+      "num_drones": 10,
+      "duration_ms": 60000,
+      "attack_start_ms": 15000,
+      "attack_duration_ms": 30000,
+      "rate_pps": 20.0,
+      "target": "D3",
+      "rekey_interval_ms": 10000,
+      "area_m": 300.0,
+      "traffic": null,
+      "crp_count": 256,
+      "reprovision_below": null
+    },
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "variants": [
+      "d2dap",
+      "d2dap_ids",
+      "d2dap_ids_trust",
+      "adaptive"
+    ]
+  },
+  "environment": {
+    "python": "3.10.11",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "machine": "AMD64",
+    "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+    "packages": {
+      "numpy": "2.2.6",
+      "pandas": "2.3.3",
+      "scikit-learn": "1.7.2",
+      "xgboost": "3.2.0",
+      "ecdsa": "0.19.2",
+      "cryptography": "50.0.2",
+      "pydantic": "2.13.5",
+      "matplotlib": "3.10.9"
+    },
+    "git_commit": "ad3ae5e95bf98faec109ab854fa18dd62423576c"
+  },
+  "started_unix": 1791126652.9328156,
+  "duration_s": 349.378,
+  "metrics": {
+    "runs": 120
+  },
+  "files": [
+    "figures/baseline_comparison_comparison.png",
+    "figures/baseline_comparison_mitigation_heatmap.png",
+    "processed/baseline_comparison/per_attack_detected.csv",
+    "processed/baseline_comparison/per_attack_detection_ms.csv",
+    "processed/baseline_comparison/per_attack_mitigation_rate.csv",
+    "processed/baseline_comparison/summary.csv",
+    "raw/baseline_comparison/runs.csv",
+    "tables/baseline_comparison_per_attack_detected.csv",
+    "tables/baseline_comparison_per_attack_detection_ms.csv",
+    "tables/baseline_comparison_per_attack_mitigation_rate.csv",
+    "tables/baseline_comparison_table.csv"
+  ],
+  "result_type": "Our Experimental Result (software simulation on the machine above)",
+  "notes": [
+    "tables/figures rebuilt from runs.csv (framed_rate)",
+    "tables/figures rebuilt from runs.csv (framed_rate)"
+  ]
+}

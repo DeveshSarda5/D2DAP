@@ -1,0 +1,6 @@
+drones,hint_auth_latency_ms_mean,trial_auth_latency_ms_mean,trial_responder_point_mul_mean,cpu_s,rss_mb,sim_throughput_receptions_per_wall_s,monitor_ms_per_window_mean,trust_update_us,detection_ms,security_bytes_per_s_per_drone
+5,32.008,40.849,6.567,4.141,306.73,453.296,86.02,213.852,1000.0,87.893
+10,30.193,53.881,9.033,5.719,308.375,928.113,80.778,149.801,1000.0,151.12
+25,34.195,86.602,18.133,17.156,319.246,1094.244,93.246,89.49,1000.0,211.312
+50,33.128,151.466,31.567,39.281,340.578,1101.816,79.736,65.565,1000.0,238.144
+100,31.059,204.237,58.333,157.203,376.535,602.821,121.22,76.958,1000.0,279.24

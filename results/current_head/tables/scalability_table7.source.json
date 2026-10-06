@@ -1,0 +1,9 @@
+{
+  "experiment": "scalability",
+  "seed": 42,
+  "caption": "Table 7: scalability (our software measurement)",
+  "sources": [
+    "raw/scalability/scalability.csv"
+  ],
+  "git_commit": "64b9b7f7768467f0a0fa8476104ec4dde74b9e32"
+}

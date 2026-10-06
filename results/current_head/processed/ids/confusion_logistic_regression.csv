@@ -1,0 +1,11 @@
+true,abnormal,benign,dos,flooding,impersonation,privilege_escalation,replay,spoofing,tampering,unauthorized_access
+abnormal,86,3,0,8,0,0,0,0,0,0
+benign,121,16887,0,399,0,1,29,2,0,0
+dos,0,3,614,0,1,0,0,3,0,0
+flooding,2,0,0,90,0,0,1,0,0,0
+impersonation,0,0,0,1,101,0,0,1,0,0
+privilege_escalation,0,2,0,0,0,88,0,0,0,0
+replay,0,2,11,1,0,0,61,6,0,0
+spoofing,0,1,3,1,0,0,1,74,0,0
+tampering,0,0,1,0,0,0,0,0,69,0
+unauthorized_access,0,0,0,0,2,0,0,0,0,87

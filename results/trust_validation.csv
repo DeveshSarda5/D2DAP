@@ -1,0 +1,13 @@
+scenario,validation_type,initial_trust,evidence,alpha,beta,final_trust,expected_policy_state,notes
+new_registered,independent_analytical,0.888889,no evidence,0,0,0.888889,NORMAL,TrustEngine prior 4.0/0.5
+benign_window,independent_analytical,0.888889,p_attack=0; tx>0,1,0,0.909091,NORMAL,positive ML normal evidence=1
+successful_auth,independent_analytical,0.888889,auth_success=1,0.5,0,0.900000,NORMAL,weight 0.5
+auth_failure,independent_analytical,0.888889,auth_failures=1,0,0.028347,0.883730,NORMAL,negative mass uses saturation and unattributed factor
+violation,independent_analytical,0.888889,violations=1,0,0.028347,0.883730,NORMAL,integrity/replay/no-session grouped term
+high_ml_attack,independent_analytical,0.888889,p_attack=0.90; insider=0.90; attribution=1,0.1,2.7,0.561644,RESTRICT,default weights and multiplier 1
+external_spoof_discounted,independent_analytical,0.888889,p_attack=0.90; external; attribution=0,0.1,0.135,0.866948,NORMAL,unattributed factor 0.05
+verified_insider,independent_analytical,0.888889,p_attack=0.90; insider; attribution=1,0.1,2.7,0.561644,RESTRICT,identity-bound negative evidence
+recovery_after_attack,independent_analytical,0.561644,next benign window after attack,1.085,2.295,0.645305,RESTRICT,hysteresis requires 0.65 to relax to MONITOR
+repeat_offender_window_2,independent_analytical,0.561644,second p_attack=0.90; multiplier=1.15,0.185,5.4,0.414973,RESTRICT,prior bad window increases multiplier
+repeat_offender_window_3,independent_analytical,0.414973,third p_attack=0.90; multiplier=1.30,0.25725,8.1,0.331117,REAUTHENTICATE,graded band transition
+repeat_offender_window_7,independent_analytical,0.209102,seventh sustained p_attack=0.90,0.415234,16.2,0.186683,QUARANTINE,trust below 0.20; policy hard rules also apply

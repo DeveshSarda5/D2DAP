@@ -1,0 +1,9 @@
+{
+  "experiment": "showcase",
+  "seed": 42,
+  "caption": "IDS attack probability over time",
+  "sources": [
+    "raw/showcase/trust_updates.csv"
+  ],
+  "git_commit": "ad3ae5e95bf98faec109ab854fa18dd62423576c"
+}

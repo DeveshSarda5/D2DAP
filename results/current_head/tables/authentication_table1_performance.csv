@@ -1,0 +1,5 @@
+config,latency_ms_mean,latency_ms_median,latency_ms_std,latency_ms_p95,latency_ms_p99,cpu_ms_per_auth,heap_peak_kb_mean,messages,bytes,ops_total_per_auth,throughput_auth_per_s
+D2DAP-128-hint,32.766,31.978,4.584,40.124,46.962,30.859,535.498,2.0,304.0,44.0,30.445
+D2DAP-192-hint,68.768,68.295,4.859,78.593,82.441,64.609,535.661,2.0,432.0,44.0,14.525
+D2DAP-256-hint,129.229,128.168,8.802,145.674,152.868,122.734,535.92,2.0,572.0,44.0,7.733
+D2DAP-128-trial,49.085,48.033,12.204,65.463,80.003,45.781,535.574,2.0,304.0,56.33,20.34

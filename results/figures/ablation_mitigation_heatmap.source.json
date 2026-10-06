@@ -1,0 +1,9 @@
+{
+  "experiment": "ablation",
+  "seed": 42,
+  "caption": "Mitigation rate per attack/system",
+  "sources": [
+    "raw/ablation/runs.csv"
+  ],
+  "git_commit": "ad3ae5e95bf98faec109ab854fa18dd62423576c"
+}

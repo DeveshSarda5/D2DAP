@@ -1,0 +1,10 @@
+{
+  "experiment": "stress",
+  "seed": 42,
+  "caption": "Detector-noise stress test (SYNTHETIC IDS false alarms)",
+  "sources": [
+    "raw/stress/runs.csv",
+    "processed/stress/summary.csv"
+  ],
+  "git_commit": "ad3ae5e95bf98faec109ab854fa18dd62423576c"
+}

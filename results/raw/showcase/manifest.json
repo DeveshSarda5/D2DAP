@@ -1,0 +1,56 @@
+{
+  "experiment": "showcase",
+  "seed": 42,
+  "config": {
+    "scenario": {
+      "num_drones": 10,
+      "duration_ms": 60000,
+      "attack_start_ms": 15000,
+      "attack_duration_ms": 30000,
+      "rate_pps": 20.0,
+      "target": "D3",
+      "rekey_interval_ms": 10000,
+      "area_m": 300.0,
+      "traffic": null,
+      "crp_count": 256,
+      "reprovision_below": null
+    },
+    "attack": "flooding",
+    "variant": "adaptive"
+  },
+  "environment": {
+    "python": "3.10.11",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "machine": "AMD64",
+    "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+    "packages": {
+      "numpy": "2.2.6",
+      "pandas": "2.3.3",
+      "scikit-learn": "1.7.2",
+      "xgboost": "3.2.0",
+      "ecdsa": "0.19.2",
+      "cryptography": "50.0.2",
+      "pydantic": "2.13.5",
+      "matplotlib": "3.10.9"
+    },
+    "git_commit": "ad3ae5e95bf98faec109ab854fa18dd62423576c"
+  },
+  "started_unix": 1791126344.3152068,
+  "duration_s": 15.993,
+  "metrics": {
+    "decisions": 10,
+    "alerts": 9,
+    "max_state_target": 3
+  },
+  "files": [
+    "figures/showcase_attack_probability.png",
+    "figures/showcase_response_timeline.png",
+    "figures/showcase_trust_over_time.png",
+    "raw/showcase/attack_evidence.json",
+    "raw/showcase/ids_alerts.csv",
+    "raw/showcase/packets.csv",
+    "raw/showcase/policy_decisions.csv",
+    "raw/showcase/trust_updates.csv"
+  ],
+  "result_type": "Our Experimental Result (software simulation on the machine above)"
+}

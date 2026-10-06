@@ -1,0 +1,9 @@
+{
+  "experiment": "puf_quality",
+  "seed": 42,
+  "caption": "Software PUF reliability vs noise",
+  "sources": [
+    "raw/puf_quality/puf_quality.csv"
+  ],
+  "git_commit": "1004505e04db99c0b277aad53cb4a9553cc3ec33"
+}

@@ -1,0 +1,44 @@
+**Per-class precision/recall/F1/support for every model**
+
+| class                |   precision |   recall |     f1 |   support | model               |
+|:---------------------|------------:|---------:|-------:|----------:|:--------------------|
+| abnormal             |      0.4115 |   0.8866 | 0.5621 |        97 | logistic_regression |
+| benign               |      0.9993 |   0.9683 | 0.9836 |     17439 | logistic_regression |
+| dos                  |      0.9762 |   0.9887 | 0.9824 |       621 | logistic_regression |
+| flooding             |      0.18   |   0.9677 | 0.3035 |        93 | logistic_regression |
+| impersonation        |      0.9712 |   0.9806 | 0.9758 |       103 | logistic_regression |
+| privilege_escalation |      0.9888 |   0.9778 | 0.9832 |        90 | logistic_regression |
+| replay               |      0.663  |   0.7531 | 0.7052 |        81 | logistic_regression |
+| spoofing             |      0.8605 |   0.925  | 0.8916 |        80 | logistic_regression |
+| tampering            |      1      |   0.9857 | 0.9928 |        70 | logistic_regression |
+| unauthorized_access  |      1      |   0.9775 | 0.9886 |        89 | logistic_regression |
+| abnormal             |      0.8529 |   0.5979 | 0.703  |        97 | decision_tree       |
+| benign               |      0.9957 |   0.9982 | 0.997  |     17439 | decision_tree       |
+| dos                  |      0.9935 |   0.9903 | 0.9919 |       621 | decision_tree       |
+| flooding             |      0.7978 |   0.7634 | 0.7802 |        93 | decision_tree       |
+| impersonation        |      0.9619 |   0.9806 | 0.9712 |       103 | decision_tree       |
+| privilege_escalation |      1      |   0.8778 | 0.9349 |        90 | decision_tree       |
+| replay               |      0.8358 |   0.6914 | 0.7568 |        81 | decision_tree       |
+| spoofing             |      0.7895 |   0.9375 | 0.8571 |        80 | decision_tree       |
+| tampering            |      0.9855 |   0.9714 | 0.9784 |        70 | decision_tree       |
+| unauthorized_access  |      0.9888 |   0.9888 | 0.9888 |        89 | decision_tree       |
+| abnormal             |      1      |   0.5876 | 0.7403 |        97 | random_forest       |
+| benign               |      0.9971 |   0.9999 | 0.9985 |     17439 | random_forest       |
+| dos                  |      0.9841 |   0.9984 | 0.9912 |       621 | random_forest       |
+| flooding             |      0.9072 |   0.9462 | 0.9263 |        93 | random_forest       |
+| impersonation        |      0.9528 |   0.9806 | 0.9665 |       103 | random_forest       |
+| privilege_escalation |      1      |   0.9222 | 0.9595 |        90 | random_forest       |
+| replay               |      0.9559 |   0.8025 | 0.8725 |        81 | random_forest       |
+| spoofing             |      0.9367 |   0.925  | 0.9308 |        80 | random_forest       |
+| tampering            |      1      |   0.9857 | 0.9928 |        70 | random_forest       |
+| unauthorized_access  |      1      |   0.9551 | 0.977  |        89 | random_forest       |
+| abnormal             |      0.9565 |   0.6804 | 0.7952 |        97 | xgboost             |
+| benign               |      0.9986 |   0.9992 | 0.9989 |     17439 | xgboost             |
+| dos                  |      0.9824 |   0.9871 | 0.9847 |       621 | xgboost             |
+| flooding             |      0.8426 |   0.9785 | 0.9055 |        93 | xgboost             |
+| impersonation        |      0.9806 |   0.9806 | 0.9806 |       103 | xgboost             |
+| privilege_escalation |      1      |   1      | 1      |        90 | xgboost             |
+| replay               |      0.9452 |   0.8519 | 0.8961 |        81 | xgboost             |
+| spoofing             |      0.8837 |   0.95   | 0.9157 |        80 | xgboost             |
+| tampering            |      0.9589 |   1      | 0.979  |        70 | xgboost             |
+| unauthorized_access  |      0.9886 |   0.9775 | 0.9831 |        89 | xgboost             |

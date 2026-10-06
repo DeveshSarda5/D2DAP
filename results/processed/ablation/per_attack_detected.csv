@@ -1,0 +1,10 @@
+kind,adaptive,no_trust,no_ml,no_policy,no_attribution,d2dap
+abnormal,1.0,1.0,1.0,1.0,1.0,0.0
+dos,1.0,1.0,1.0,1.0,1.0,1.0
+flooding,1.0,1.0,1.0,1.0,1.0,0.0
+impersonation,1.0,1.0,1.0,1.0,1.0,1.0
+privilege_escalation,1.0,1.0,1.0,1.0,1.0,0.0
+replay,1.0,1.0,1.0,1.0,1.0,1.0
+spoofing,1.0,1.0,1.0,1.0,1.0,1.0
+tampering,1.0,1.0,1.0,1.0,1.0,1.0
+unauthorized_access,1.0,1.0,1.0,1.0,1.0,1.0
